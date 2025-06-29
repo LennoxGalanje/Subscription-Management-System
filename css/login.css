@@ -1,0 +1,14 @@
+/* style.css */
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Custom styles to hide/show forms */
+.form-container {
+    display: none; /* Hidden by default */
+}
+
+.form-container.active {
+    display: block; /* Shown when active */
+}
