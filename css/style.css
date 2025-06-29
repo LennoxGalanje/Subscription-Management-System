@@ -1,36 +1,34 @@
 body {
     font-family: 'Inter', sans-serif;
-    background-color: #f0f2f5; /* Light background for the overall page */
-    overflow: hidden; /* Prevent overall body scroll, main content will scroll */
+    background-color: #f0f2f5;
+    overflow: hidden; 
 }
 
-/* Make the sidebar fixed */
+
 aside {
     position: fixed;
-    height: 100vh; /* Make it take the full viewport height */
-    top: 0;
+    height: 100vh; 
     left: 0;
-    z-index: 20; /* Ensure it's above other content if needed */
+    z-index: 20; 
 }
 
-/* Adjust the main content area to account for the fixed sidebar */
-/* The w-64 class on aside translates to width: 16rem (256px) */
+
 .flex-1 {
-    margin-left: 16rem; /* Match the width of the sidebar */
+    margin-left: 16rem; 
 }
 
-/* Custom scrollbar for the content area */
+
 .main-content-scroll {
     overflow-y: auto;
-    scrollbar-width: thin; /* Firefox */
-    scrollbar-color: #4A5568 #2D3748; /* thumb and track color for Firefox */
+    scrollbar-width: thin; 
+    scrollbar-color: #4A5568 #2D3748; 
 }
 
 .main-content-scroll::-webkit-scrollbar {
-    width: 8px; /* Width of the scrollbar */
+    width: 8px; 
 }
 
 .main-content-scroll::-webkit-scrollbar-track {
-    background: #2D3748; /* Color of the track */
+    background: #2D3748; 
     border-radius: 10px;
 }
